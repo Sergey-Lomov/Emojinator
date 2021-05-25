@@ -59,6 +59,7 @@ final class Emojinator {
         "islam" : "☪️",
     ]
     
+    // Will be implemented by ML at future
     func emojinate(string: String) -> String {
         let words = string.split(separator: " ")
         let emoji = words.compactMap{ Self.dictionary[String($0)] }
